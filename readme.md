@@ -22,11 +22,11 @@ graph LR
     dockerfile[Dockerfile]
     requiriments.txt[requiriments.txt]
     templates[templates]
+    subgraph Templates
+        index.html[index.html]
+    end
   end
 
-  subgraph Templates
-    index.html[index.html]
-  end
 
   data --> sensor_quarto.db
   web --> webserver-sensor.py
@@ -34,4 +34,5 @@ graph LR
   web --> requiriments.txt
   web --> templates
   backend --> dht11.py
+  templates --> index.html
 ```
