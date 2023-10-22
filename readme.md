@@ -1,6 +1,7 @@
 #Projeto de medição de temperatura e umidade usando o raspberry pi e o sensor DHT11
 
 #Estrutura do projeto
+```mermaid 
 graph LR
   subgraph Nível Raiz
     data[Data]
@@ -33,3 +34,4 @@ graph LR
   web --> requiriments.txt
   web --> templates
   backend --> dht11.py
+```
