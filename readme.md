@@ -10,16 +10,17 @@ graph LR
   end
 
   subgraph Backend
-    style oneFill fill:#FFFF00,stroke:#3E6C0A,stroke-width:2px
+    style Backend fill:#c4ca35,stroke:#3E6C0A,stroke-width:2px
     dht11.py[dht11.py]
   end
 
   subgraph Data
+    style Data fill:#c4ca35,stroke:#3E6C0A,stroke-width:2px
     sensor_quarto.db[sensor_quarto.db]
   end
 
   subgraph Web
-    style oneFill fill:#000080,stroke:#3E6C0A,stroke-width:2px
+    style Web fill:#000080,stroke:#3E6C0A,stroke-width:2px
     webserver-sensor.py[webserver-sensor.py]
     dockerfile[Dockerfile]
     requiriments.txt[requiriments.txt]
