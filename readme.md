@@ -22,9 +22,8 @@ graph LR
     dockerfile[Dockerfile]
     requiriments.txt[requiriments.txt]
     templates[templates]
-    subgraph Templates
-        index.html[index.html]
-    end
+    index.html[index.html]
+    
   end
 
 
