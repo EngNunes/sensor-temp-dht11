@@ -12,7 +12,8 @@ def home():
 
 def mostrar_dados():
     # connection = sqlite3.connect('../sensor_quarto.db')
-    connection = sqlite3.connect('../data/sensor_quarto.db')
+    # connection = sqlite3.connect('../data/sensor_quarto.db')
+    connection = sqlite3.connect('/home/pi/temperature-sensor/data/sensor_quarto.db')
     cursor = connection.cursor()
     cursor.execute("SELECT data, hora, temperatura, umidade FROM sensor_data_quarto")
     dados = cursor.fetchall()
@@ -23,4 +24,5 @@ def mostrar_dados():
 #     app.run(host='0.0.0.0', port=5000)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
+    # app.run(host='0.0.0.0', port=5000, debug=True)
